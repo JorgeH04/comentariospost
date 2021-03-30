@@ -1,0 +1,116 @@
+    
+
+
+    <!--**************************************************
+                              FOOTER
+        ******************************************************-->    
+
+
+        <boddy>
+            <div id="myButton"></div>
+          </boddy>
+
+    <footer class="footer section-space">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <img src="https://res.cloudinary.com/dsk4fft6r/image/upload/c_scale,w_200/v1616008555/LogoMakr-9uU7wJ_ljbemi.png" alt="logo-footer">
+                    <p class="footer-p" style="background-color:blueviolet; margin-left:39px">
+                        <img src="https://res.cloudinary.com/dsk4fft6r/image/upload/v1616008742/WhatsApp_Image_2021-03-17_at_16.16.46_gquzfh.jpg" alt="" srcset="">
+
+                    </p>
+                   
+                </div>
+
+                <div class="footer-nav">
+                    <h5 class="footer-title">Enlaces</h5>
+                    <div class="footer-title-line"></div>
+                    <ul>
+                        <li><i class="fas fa-square-full"></i><a href="#top">Inicio</a></li>
+                        <li><i class="fas fa-square-full"></i><a href="#intro" target="_blank">Introducción</a></li>
+                        <li><i class="fas fa-square-full"></i><a href="#servicios">Servicios</a></li>
+                        <li><i class="fas fa-square-full"></i><a href="#materiales">Materiales</a></li>
+                        <li><i class="fas fa-square-full"></i><a href="#mision">Dioses</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                        <h5 class="footer-title">Espero su contacto</h5>
+                    <div class="footer-title-line"></div>
+                    <ul>
+                      
+                    </ul>
+                    
+                </div>
+
+                
+            </div>            
+        </div>
+    </footer>
+
+  
+<style>
+    .floating-wpp{position:fixed;bottom:15px;left:15px;font-size:84px;transition:bottom .2s}
+
+</style>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+
+    
+    <script type="text/javascript">
+        $(function () {
+            $('#myButton').floatingWhatsApp({
+                phone: '5493512933482',
+                // popupMessage: 'Hola, su consulta no molesta',
+                // message: "Mi consulta",
+                // showPopup: true,54 9 3512933482
+                // showOnIE: false,
+                // headerTitle: 'Bienvenido!',
+                // headerColor: 'crimson',
+                backgroundColor:'crimson',
+                buttonImage: '<img src="whatsapp.svg" />'
+            });
+        });
+    
+    </script>
+
+        <script src="assets/js/jquery-3.3.1.js"></script>
+        <script src="assets/js/slidereveal.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+        //NAVIGATION ANCHOR TYPE
+            $(document).ready(function() {
+
+            var scrollLink = $('.scroll');
+
+            // Smooth scrolling
+            scrollLink.click(function(e) {
+            e.preventDefault();
+            $('body,html').animate({
+                scrollTop: $(this.hash).offset().top
+            }, 1000 );
+            });
+
+            // Active link switching
+            $(window).scroll(function() {
+            var scrollbarLocation = $(this).scrollTop();
+
+            scrollLink.each(function() {
+
+                var sectionOffset = $(this.hash).offset().top - 100;
+
+                if ( sectionOffset <= scrollbarLocation ) {
+                $(this).parent().addClass('active');
+                $(this).parent().siblings().removeClass('active');
+                }
+            })
+
+            })
+
+            });
+
+</script>
+
+</body>
+</html>

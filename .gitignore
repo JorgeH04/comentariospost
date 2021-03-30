@@ -1,0 +1,73 @@
+node_modules
+.env
+
+
+
+
+
+<% include ../partials/_header %>
+
+
+
+<div class="my-login-page" style="margin-top: 9%">
+  <section class="h-100">
+      <div class="container h-100">
+          <div class="row justify-content-md-center h-100">
+              <div class="card-wrapper">
+                      <div class="brand">
+                              
+                          </div>
+                  <div class="card fat">
+                      <div class="card-body">
+                          <h2 class="card-title mx-auto">Color y Talle</h2>
+                          <form action="/ofertauno/tallecolor/<%= ofertauno._id %>" method="POST" class="my-login-validation" novalidate="">
+                              <div class="form-group">
+                                  <label for="email">Digite su talle</label>
+                                  <select name="envio" class="nice-select" id="country">
+                                     
+                                    <option value="<%= ofertauno.tallestock %>"><%= ofertauno.tallestock %></option>
+                                    <option value="<%= ofertauno.colorstock %>"><%= ofertauno.colorstock %></option>
+                                 
+
+                                  </select>
+                                  <div class="invalid-feedback">
+                                      Email is invalid
+                                  </div>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="email">Digite su color</label>
+                                  <input type="text" name="color" class="form-control" value="<%= ofertauno.colorstock %>"required data-eye>
+                                  
+                              </div>
+
+                              <div class="form-group">
+                                  <div class="custom-checkbox custom-control">
+                                      <input type="checkbox" name="remember" id="remember" class="custom-control-input">
+                                  </div>
+                              </div>
+
+                              <div class="form-group m-0">
+                                  <button type="submit" class="btn btn-dark btn-block">
+                                      Guardar
+                                  </button>
+                              </div>
+                               
+       
+                          </form>
+                      </div>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+  </section>
+
+</div>
+
+
+
+
+
+
+      <% include ../partials/_footer %>
